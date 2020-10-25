@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="reg-box">
+    <div class="box">
+        <h1>Student Registration Form</h1>
+        <table>
+            <tr>
+                <th>WAKTU REGISTRASI</th>
+                <td><input type="datetime-local"></td>
+            </tr>
+        </table>
+        
+        <label for="">INFORMASI PRIBADI</label>
+
+        <table>
+            <tr>
+                <th>NAMA</th>
+                <td><input type="text" name="username" placeholder="Full Name" required></td>
+            </tr>
+            <tr>
+                <th>TANGGAL LAHIR</th>
+                <td><input type="date" name="tgl_lahir" placeholder="Birth date"></td>
+            </tr>
+        </table>
+        <label for="">INFORMASI KONTAK</label>
+        <table>
+            <tr>
+                <th>ALAMAT</th>
+                <td colspan="3"><textarea name="alamat" id="" cols="40" rows="2" placeholder="Alamat"></textarea></td>             
+            </tr>
+            <tr>
+                <th>KOTA</th>
+                <td><select name="kota" id="">
+                    <option value="">--pilih kota--</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Depok">Depok</option>
+                    <option value="Tangerang Selatan">Tangerang Selatan</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>PROVINSI</th>
+                <td>
+                    <select name="provinsi" id="">
+                        <option value="">--pilih provinsi--</option>
+                        <option value="Tangerang">Tangerang</option>
+                        <option value="jabar">Jawa Barat</option>
+                        <option value="Jateng">Jawa Tengah</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>NEGARA</th>
+                <td>
+                    <select name="negara" id="">
+                        <option value="">--pilih negara--</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Singapura">Singapura</option>
+                        <option value="Malaysia">Malaysia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>KODE POS</th>
+                <td><input type="number" name="kodepos" placeholder="Kode Pos"></td>
+            </tr>
+            <tr>
+                <th>PHONE</th>
+                <td><input type="text" name="phone" placeholder="Nomor Telephone"></td>
+            </tr>
+            <tr>
+                <th>EMAIL</th>
+                <td><input type="email" name="email" placeholder="user@example.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" title="Email yang anda masukan tidak valid"></td>
+            </tr>
+
+        </table>
+
+
+        <input type="submit" name="daftar" value="DAFTAR">
+        <input type="reset" name="reset" value="CANCEL">
+
+    </div>
+    </div>
+</body>
+</html>
