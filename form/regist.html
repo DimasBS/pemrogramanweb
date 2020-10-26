@@ -17,37 +17,39 @@
             </tr>
         </table>
         
-        <label for="">INFORMASI PRIBADI</label>
+        <label for="nama" id="judul1">INFORMASI PRIBADI</label>
 
         <table>
             <tr>
                 <th>NAMA</th>
-                <td><input type="text" name="username" placeholder="Full Name" required></td>
+                <td><input type="text" name="username" id="nama" placeholder="Full Name" required></td>
             </tr>
             <tr>
                 <th>TANGGAL LAHIR</th>
-                <td><input type="date" name="tgl_lahir" placeholder="Birth date"></td>
+                <td><input type="date" name="tgl_lahir"></td>
             </tr>
         </table>
-        <label for="">INFORMASI KONTAK</label>
+        <label for="alamat" id="judul2">INFORMASI KONTAK</label>
         <table>
             <tr>
                 <th>ALAMAT</th>
-                <td colspan="3"><textarea name="alamat" id="" cols="40" rows="2" placeholder="Alamat"></textarea></td>             
+                <td><textarea name="alamat" id="alamat" cols="40" rows="2" placeholder="Alamat"></textarea></td>             
             </tr>
             <tr>
                 <th>KOTA</th>
-                <td><select name="kota" id="">
-                    <option value="">--pilih kota--</option>
-                    <option value="Jakarta">Jakarta</option>
-                    <option value="Depok">Depok</option>
-                    <option value="Tangerang Selatan">Tangerang Selatan</option>
-                </select></td>
+                <td>
+                    <select name="kota" id="kota">
+                        <option value="">--pilih kota--</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Depok">Depok</option>
+                        <option value="Tangerang Selatan">Tangerang Selatan</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <th>PROVINSI</th>
                 <td>
-                    <select name="provinsi" id="">
+                    <select name="provinsi" id="provinsi">
                         <option value="">--pilih provinsi--</option>
                         <option value="Tangerang">Tangerang</option>
                         <option value="jabar">Jawa Barat</option>
@@ -58,7 +60,7 @@
             <tr>
                 <th>NEGARA</th>
                 <td>
-                    <select name="negara" id="">
+                    <select name="negara" id="negara">
                         <option value="">--pilih negara--</option>
                         <option value="Indonesia">Indonesia</option>
                         <option value="Singapura">Singapura</option>
